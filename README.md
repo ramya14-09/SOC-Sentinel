@@ -158,26 +158,6 @@ The demonstration login credentials should be replaced with secure authenticatio
 The objective of SOC Sentinel is to demonstrate how security monitoring, authentication log analysis, threat detection, risk assessment, incident tracking, and reporting can be integrated into a single dashboard.
 
 
-## 🏗️ Project Architecture
-
-The following diagram illustrates the workflow of SOC Sentinel, from authentication log collection to threat detection, risk assessment, and incident management.
-
-```mermaid
-flowchart TD
-    A["Authentication Log Dataset (CSV)"] --> B["Log Parser"]
-    C["Simulated Login Events"] --> B
-    B --> D["Threat Detection Engine"]
-    D --> E["Risk Scoring Engine"]
-    E --> F["Streamlit SOC Dashboard"]
-    E --> G["Incident Response Recommendations"]
-    E --> H["SQLite Incident Database"]
-    F --> I["Security Analytics and Visualizations"]
-    F --> J["CSV and PDF Reports"]
-    H --> K["Incident Tracking"]
-    L["Pytest Automated Tests"] -.-> D
-    L -.-> E
-    L -.-> H
-```
 
 
 
